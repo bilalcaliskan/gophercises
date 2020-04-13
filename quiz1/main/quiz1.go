@@ -1,4 +1,4 @@
-package quiz1
+package main
 
 import (
 	"encoding/csv"
@@ -9,8 +9,8 @@ import (
 	"time"
 )
 
-func RunQuiz1() {
-	csvFileName := flag.String("csv", "quiz1/problems.csv", "a csv file in the format of question, answer")
+func main() {
+	csvFileName := flag.String("csv", "quiz1/main/problems.csv", "a csv file in the format of question, answer")
 	timeLimit := flag.Int("limit", 2, "the time limit for the quiz in seconds")
 	flag.Parse()
 
